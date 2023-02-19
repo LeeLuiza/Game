@@ -15,7 +15,7 @@ class Program
 
 public static class Word //считываем рандомное слово
 {
-    public static string ReadWord(this int number)
+    public static string ReadWord()
     {
         int i = 1;
         var random = new Random();
@@ -60,7 +60,7 @@ public static class Word //считываем рандомное слово
 
 public class Conditions 
 {
-    public string word = 1.ReadWord();
+    public string word = Word.ReadWord();
 
     public Conditions()
     {
